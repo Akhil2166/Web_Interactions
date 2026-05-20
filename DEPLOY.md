@@ -80,3 +80,22 @@ Do **not** leave Root Directory empty if the app is only in a subfolder.
 ## After deploy
 
 Your live URL will appear in the Vercel dashboard, e.g. `https://your-project.vercel.app`.
+
+---
+
+## Two GitHub repos (same app)
+
+If you use **more than one** remote (for example `Web_des_Collection-` and `Web_Interactions`), every repo that Vercel builds must contain the **same** full tree: `src/`, `public/`, `scripts/`, lockfile, and config. Uploading only `package.json` and docs to a second repo will break that deployment with “no `app` directory” or missing `scripts/verify-deploy.mjs`.
+
+Keep remotes in sync, for example:
+
+```bash
+git remote add interactions https://github.com/Akhil2166/Web_Interactions.git
+git push interactions main:main
+```
+
+Or connect Vercel only to the repo that always receives full pushes.
+
+### Vercel warning: `engines.node` will auto-upgrade
+
+`package.json` uses `"node": ">=20.9.0 <21"` so Vercel stays on **Node 20** and does not float to the next major when it releases.
