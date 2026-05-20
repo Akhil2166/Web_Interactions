@@ -1,0 +1,366 @@
+{
+  "url": "https://www.fuse.kiwi/",
+  "title": "Fuse.kiwi",
+  "description": "",
+  "scrapedAt": "2026-05-20T04:29:26.428Z",
+  "colors": {
+    "bg": "#f2f2f2",
+    "bgSecondary": "#000000",
+    "text": "#000000",
+    "textSecondary": "#666666",
+    "primary": "#0000ff",
+    "secondary": "#0000ff",
+    "border": "#1a1a1a",
+    "palette": [
+      {
+        "hex": "#1a1a1a",
+        "role": "button",
+        "count": 1,
+        "area": 35471,
+        "contrast": "light"
+      },
+      {
+        "hex": "#000000",
+        "role": "badge",
+        "count": 1,
+        "area": 4424,
+        "contrast": "light"
+      },
+      {
+        "hex": "#0000ff",
+        "role": "text-accent",
+        "count": 1,
+        "area": 50,
+        "contrast": "light"
+      }
+    ]
+  },
+  "typography": {
+    "headingFont": {
+      "family": "syne, sans-serif",
+      "cleanFamily": "syne",
+      "weights": [
+        "500"
+      ],
+      "usedFor": "heading",
+      "fallback": "sans-serif",
+      "realUrl": "https://fonts.gstatic.com/s/syne/v22/8vIS7w4qzmVxsWxjBZRjr0FKM_04uT6n.woff"
+    },
+    "bodyFont": {
+      "family": "syne, sans-serif",
+      "cleanFamily": "syne",
+      "weights": [
+        "400"
+      ],
+      "usedFor": "body",
+      "fallback": "sans-serif",
+      "realUrl": "https://fonts.gstatic.com/s/syne/v22/8vIS7w4qzmVxsWxjBZRjr0FKM_04uT6n.woff"
+    },
+    "fontSizes": [
+      240,
+      32,
+      28,
+      24,
+      16,
+      14
+    ],
+    "lineHeights": [],
+    "details": [
+      {
+        "role": "H1",
+        "size": 240,
+        "weight": "500",
+        "lineHeight": "240px",
+        "letterSpacing": "-12px",
+        "font": "syne"
+      },
+      {
+        "role": "H3",
+        "size": 48,
+        "weight": "500",
+        "lineHeight": "56px",
+        "letterSpacing": "normal",
+        "font": "syne"
+      },
+      {
+        "role": "H4",
+        "size": 32,
+        "weight": "500",
+        "lineHeight": "34px",
+        "letterSpacing": "normal",
+        "font": "syne"
+      },
+      {
+        "role": "Body",
+        "size": 14,
+        "weight": "500",
+        "lineHeight": "16px",
+        "letterSpacing": "normal",
+        "font": "Syne Mono"
+      }
+    ]
+  },
+  "spacing": {
+    "base": 2,
+    "common": [
+      {
+        "value": 2,
+        "count": 100,
+        "role": "element"
+      },
+      {
+        "value": 4,
+        "count": 3,
+        "role": "element"
+      }
+    ]
+  },
+  "borderRadius": [
+    {
+      "value": 2,
+      "count": 221,
+      "role": "subtle"
+    },
+    {
+      "value": 6,
+      "count": 100,
+      "role": "button"
+    },
+    {
+      "value": 24,
+      "count": 12,
+      "role": "card"
+    },
+    {
+      "value": 4,
+      "count": 3,
+      "role": "subtle"
+    }
+  ],
+  "shadows": [
+    {
+      "value": "rgba(0, 0, 0, 0.05) 0px 0px 0px 1px",
+      "count": 121,
+      "level": "low"
+    }
+  ],
+  "components": {
+    "primaryButton": {
+      "bg": "#1a1a1a",
+      "border": "",
+      "borderRadius": 24,
+      "color": "#ffffff",
+      "fontSize": 24,
+      "fontWeight": "500",
+      "paddingH": 12,
+      "paddingV": 0,
+      "variant": "filled"
+    },
+    "buttons": [
+      {
+        "bg": "transparent",
+        "border": "",
+        "borderRadius": 4,
+        "color": "#1a1a1a",
+        "fontSize": 24,
+        "fontWeight": "500",
+        "paddingH": 0,
+        "paddingV": 4,
+        "variant": "ghost"
+      },
+      {
+        "bg": "#1a1a1a",
+        "border": "",
+        "borderRadius": 24,
+        "color": "#ffffff",
+        "fontSize": 24,
+        "fontWeight": "500",
+        "paddingH": 12,
+        "paddingV": 0,
+        "variant": "filled"
+      }
+    ],
+    "card": null
+  },
+  "fontFaces": [
+    {
+      "family": "Syne",
+      "src": "https://fonts.gstatic.com/s/syne/v22/8vIS7w4qzmVxsWxjBZRjr0FKM_04uT6n.woff",
+      "style": "normal",
+      "weight": "400"
+    },
+    {
+      "family": "Syne Mono",
+      "src": "https://fonts.gstatic.com/s/synemono/v15/K2FzfZNHj_FHBmRbFvHzIQ.woff",
+      "style": "normal",
+      "weight": "400"
+    },
+    {
+      "family": "Syne Tactile",
+      "src": "https://fonts.gstatic.com/s/synetactile/v15/11hGGpna2UTQKjMCVzjAPMKh3A.woff",
+      "style": "normal",
+      "weight": "400"
+    },
+    {
+      "family": "Syne",
+      "src": "https://fonts.gstatic.com/s/syne/v22/8vIS7w4qzmVxsWxjBZRjr0FKM_04uQ6gTYnvDE5YfqXtUw.woff",
+      "style": "normal",
+      "weight": "400"
+    },
+    {
+      "family": "Syne",
+      "src": "https://fonts.gstatic.com/s/syne/v22/8vIS7w4qzmVxsWxjBZRjr0FKM_04uQ6tTYnvDE5YfqXtUw.woff",
+      "style": "normal",
+      "weight": "400"
+    },
+    {
+      "family": "Syne",
+      "src": "https://fonts.gstatic.com/s/syne/v22/8vIS7w4qzmVxsWxjBZRjr0FKM_04uQ6jTYnvDE5YfqU.woff",
+      "style": "normal",
+      "weight": "400"
+    },
+    {
+      "family": "Syne Mono",
+      "src": "https://fonts.gstatic.com/s/synemono/v15/K2FzfZNHj_FHBmRbFvHDK6qlLSj6ZVOM.woff2",
+      "style": "normal",
+      "weight": "400"
+    },
+    {
+      "family": "Syne Mono",
+      "src": "https://fonts.gstatic.com/s/synemono/v15/K2FzfZNHj_FHBmRbFvHDJaqlLSj6ZQ.woff2",
+      "style": "normal",
+      "weight": "400"
+    },
+    {
+      "family": "Syne Tactile",
+      "src": "https://fonts.gstatic.com/s/synetactile/v15/11hGGpna2UTQKjMCVzjAPMKR1iEcrPGE8OA2.woff2",
+      "style": "normal",
+      "weight": "400"
+    },
+    {
+      "family": "Syne Tactile",
+      "src": "https://fonts.gstatic.com/s/synetactile/v15/11hGGpna2UTQKjMCVzjAPMKR2CEcrPGE8A.woff2",
+      "style": "normal",
+      "weight": "400"
+    }
+  ],
+  "cssCustomProperties": [
+    {
+      "name": "--bg",
+      "value": "#f2f2f2",
+      "category": "color"
+    },
+    {
+      "name": "--line",
+      "value": "#4d4e52",
+      "category": "color"
+    },
+    {
+      "name": "--visited",
+      "value": "#e2e5e7",
+      "category": "color"
+    },
+    {
+      "name": "--white",
+      "value": "#fff",
+      "category": "color"
+    },
+    {
+      "name": "--black",
+      "value": "#1a1a1a",
+      "category": "color"
+    },
+    {
+      "name": "--blue",
+      "value": "#0071d5",
+      "category": "color"
+    },
+    {
+      "name": "--yellow",
+      "value": "#ebff00",
+      "category": "color"
+    },
+    {
+      "name": "--grey-opacity",
+      "value": "0.7",
+      "category": "spacing"
+    },
+    {
+      "name": "--loading",
+      "value": "#37383d",
+      "category": "color"
+    },
+    {
+      "name": "--purple",
+      "value": "#4215cc",
+      "category": "color"
+    },
+    {
+      "name": "--green",
+      "value": "#92ff45",
+      "category": "color"
+    },
+    {
+      "name": "--graphic",
+      "value": "#5de726",
+      "category": "color"
+    },
+    {
+      "name": "--photo",
+      "value": "#57c7f5",
+      "category": "color"
+    },
+    {
+      "name": "--illustration",
+      "value": "#ffa96c",
+      "category": "color"
+    },
+    {
+      "name": "--threed",
+      "value": "#3bdc5e",
+      "category": "color"
+    },
+    {
+      "name": "--art",
+      "value": "#7ca4ff",
+      "category": "color"
+    },
+    {
+      "name": "--type",
+      "value": "#ef8fdd",
+      "category": "color"
+    },
+    {
+      "name": "--video",
+      "value": "#ffd900",
+      "category": "color"
+    },
+    {
+      "name": "--music",
+      "value": "#b9b2fa",
+      "category": "color"
+    },
+    {
+      "name": "--reading",
+      "value": "#1de1a1",
+      "category": "color"
+    },
+    {
+      "name": "--website",
+      "value": "#ff909f",
+      "category": "color"
+    }
+  ],
+  "tags": [
+    "light",
+    "rounded",
+    "accented",
+    "bold-typography",
+    "monospace",
+    "sans-serif"
+  ],
+  "mood": "Clean, minimal, and product-focused with deliberate use of whitespace.",
+  "heroHeadline": "InterestingInternet",
+  "heroSubtitle": "illustration",
+  "isJapanese": false
+}

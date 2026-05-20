@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Local duplicate scaffold (deploy from repo root only)
+/fuse-website/

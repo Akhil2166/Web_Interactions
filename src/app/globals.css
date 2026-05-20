@@ -1,0 +1,164 @@
+@import "tailwindcss";
+@config "../../tailwind.config.ts";
+
+/* Fuse.kiwi extracted design tokens — DESIGN-fuse-kiwi.md & design-tokens-fuse-kiwi.json */
+:root {
+  --bg: #f2f2f2;
+  --color-bg: #f2f2f2;
+  --color-bg-secondary: #000000;
+  --color-text: #000000;
+  --color-text-secondary: #666666;
+  --color-primary: #0000ff;
+  --color-border: #1a1a1a;
+
+  --line: #4d4e52;
+  --visited: #e2e5e7;
+  --white: #fff;
+  --black: #1a1a1a;
+  --blue: #0071d5;
+  --yellow: #ebff00;
+  --loading: #37383d;
+  --purple: #4215cc;
+  --green: #92ff45;
+  --graphic: #5de726;
+  --photo: #57c7f5;
+  --illustration: #ffa96c;
+  --threed: #3bdc5e;
+  --art: #7ca4ff;
+  --type: #ef8fdd;
+  --video: #ffd900;
+  --music: #b9b2fa;
+  --reading: #1de1a1;
+  --website: #ff909f;
+
+  --grey-opacity: 0.7;
+  --spacing-base: 2px;
+  --container-max: 1440px;
+  --shadow-low: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+
+  --radius-subtle: 2px;
+  --radius-button: 6px;
+  --radius-card: 24px;
+  --radius-pill: 50px;
+  --radius-filled: 24px;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-primary: var(--color-primary);
+  --color-text-primary: var(--color-text);
+  --color-text-secondary: var(--color-text-secondary);
+  --color-border: var(--color-border);
+  --color-black: var(--black);
+  --color-line: var(--line);
+  --color-visited: var(--visited);
+  --color-white: var(--white);
+  --color-blue: var(--blue);
+  --color-yellow: var(--yellow);
+  --color-loading: var(--loading);
+  --color-purple: var(--purple);
+  --color-green: var(--green);
+  --color-graphic: var(--graphic);
+  --color-photo: var(--photo);
+  --color-illustration: var(--illustration);
+  --color-threed: var(--threed);
+  --color-art: var(--art);
+  --color-type: var(--type);
+  --color-video: var(--video);
+  --color-music: var(--music);
+  --color-reading: var(--reading);
+  --color-website: var(--website);
+
+  --font-heading: var(--font-syne), sans-serif;
+  --font-body: var(--font-syne-mono), monospace;
+
+  --radius-subtle: var(--radius-subtle);
+  --radius-button: var(--radius-button);
+  --radius-card: var(--radius-card);
+  --radius-pill: var(--radius-pill);
+
+  --shadow-low: var(--shadow-low);
+  --spacing-unit: var(--spacing-base);
+  --max-width-container: var(--container-max);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--color-text);
+  font-family: var(--font-syne-mono), monospace;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--color-primary);
+  color: var(--white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-syne), sans-serif;
+  font-weight: 500;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 4px;
+}
+
+.text-display {
+  font-family: var(--font-syne), sans-serif;
+  font-size: clamp(72px, 18vw, 240px);
+  font-weight: 500;
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+}
+
+@media (min-width: 1024px) {
+  .text-display {
+    letter-spacing: -12px;
+    line-height: 240px;
+  }
+}

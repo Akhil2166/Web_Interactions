@@ -32,48 +32,49 @@ Fonts: **Syne** (headings), **Syne Mono** (body/labels).
 ## Getting started
 
 ```bash
-cd fuse-website
 npm install
 npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000).
 
-## Build & deploy
+## Deploy to Vercel
+
+1. Push this repo to GitHub — **`src/app` must be at the repository root**.
+2. Import on [vercel.com/new](https://vercel.com/new) — Framework: **Next.js**, Root Directory: **empty**.
+3. Redeploy.
+
+See [DEPLOY.md](./DEPLOY.md) for troubleshooting.
 
 ```bash
+npm run verify   # checks src/app exists before build
 npm run build
-npm start
 ```
 
-Deploy to Vercel, Netlify, or any Node host supporting Next.js.
+### Common Vercel error
+
+> Couldn't find any `pages` or `app` directory
+
+Your GitHub repo is missing `src/`. Push the full project (see DEPLOY.md).
 
 ## Project structure
 
 ```
 src/
   app/           # layout, page, globals.css
-  components/
-    sections/    # Hero, Showcase, Pills, About, Marquee, Testimonials, Footer
-    ui/          # Button, MagneticButton, Container
-    providers/   # SmoothScroll (Lenis)
+  components/    # sections, ui, providers
   data/          # design-tokens-fuse-kiwi.json
-  lib/           # tokens, motion presets, utils
+  lib/
+public/
+scripts/         # verify-deploy.mjs
 ```
 
 ## Sections
 
 1. **Hero** — giant “Interesting Internet” + category-colored subtitle
 2. **Showcase grid** — asymmetrical cards with parallax hover
-3. **Category pills** — extracted Fuse category colors, 50px radius
-4. **About** — editorial layout with scroll parallax
+3. **Category pills** — extracted Fuse category colors
+4. **About** — editorial layout
 5. **Marquee** — infinite scrolling typography
 6. **Testimonials** — minimal rounded cards
-7. **Footer** — oversized type on `#1a1a1a` surface
-
-## Source files
-
-Design documentation lives in the parent folder:
-
-- `../DESIGN-fuse-kiwi.md`
-- `../design-tokens-fuse-kiwi.json`
+7. **Footer** — oversized type on `#1a1a1a`
